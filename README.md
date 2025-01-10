@@ -1,9 +1,9 @@
 # arcanebytes
 
 ## Team Members
-- twfksh (Team Leader)
-- fahimalshihab
-- tanzilrayhan
+- [twfksh](https://github.com/twfksh) (Team Leader)
+- [fahimalshihab](https://github.com/fahimalshihab)
+- [tanzilrayhan](https://github.com/TanzilRayhan)
 
 ## Mentor
 - MDJhalak
