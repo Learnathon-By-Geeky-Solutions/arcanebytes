@@ -1,15 +1,15 @@
 # arcanebytes
 
 ## Team Members
-- [twfksh](https://github.com/twfksh) (Team Leader)
-- [fahimalshihab](https://github.com/fahimalshihab)
-- [tanzilrayhan](https://github.com/TanzilRayhan)
+- Toufiq A. Shishir (Team Leader) – [twfksh](https://github.com/twfksh)
+- Fahim Al Shihab – [fahimalshihab](https://github.com/fahimalshihab)
+- Tanzil Rayhan – [tanzilrayhan](https://github.com/TanzilRayhan)
 
 ## Mentor
 - MDJhalak
 
 ## Project Description
-Add your project description here.
+work in progress...
 
 ## Getting Started
 1. Clone the repository
@@ -22,7 +22,10 @@ Add your project description here.
 3. Write descriptive commit messages
 4. Create pull requests for review
 
+## Contributing
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, or suggest improvements.
+
 ## Resources
-- [Project Documentation](docs/)
-- [Development Setup](docs/setup.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
+- [Project Documentation](docs/): Detailed documentation about the project.
+- [Development Setup](docs/setup.md): Instructions for setting up the development environment.
+- [Contributing Guidelines](CONTRIBUTING.md): Guidelines for contributing to the project.
