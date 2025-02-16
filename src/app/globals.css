@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-background{
+.main-theme{
   background-color: #202020;
+}
+.secondary-theme{
+  background-color: #2C2C2C;
+}
+.font-color{
+  color: #F2F0E3;
 }
