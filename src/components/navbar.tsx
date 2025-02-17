@@ -41,29 +41,32 @@ const navbar = () => {
           </li>
           </ul>
         </div>
-        <Link href="/">
+        <Link className="delay-150 duration-300 ease-in-out hover:scale-110" href="/">
                     <Image src="/logo.png" alt="logo" width={100} height={100} />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu text-lg menu-horizontal px-1">
           <li>
-            <Link href="/">Home</Link>
+            <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36] " href="/">Home</Link>
           </li>
           <li>
-            <a>Leaderboard</a>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">Leaderboard</Link>
           </li>
           <li>
-            <a>Features</a>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"  href="/">Features</Link>
           </li>
           <li>
-            <a>About</a>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">Blogs</Link>
+          </li>
+          <li>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">About Us</Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <Link className=" border-2 px-4 py-2 rounded-full" href="/login">Log In</Link>
-        <Link className=" px-4 py-2 rounded-full bg-[white] ml-5 text-[#202020]" href="/login">Contact Us</Link>
+        <Link className=" px-10 py-2 rounded-full btn-outline-light" href="/login">Log In</Link>
+        <Link className=" px-4 py-2 rounded-full btn-light ml-5" href="/contact">Contact Us</Link>
       </div>
     </div>
   );

@@ -18,3 +18,62 @@
 .dark-font{
   color: #202020;
 }
+
+.accent-font{
+  color: #FF5B36;
+}
+
+.btn-dark{
+  background-color: #202020;
+  color: #F2F0E3;
+  transition: 0.4s;
+}
+.btn-dark:hover{
+  background-color: #F2F0E3;
+  color: #202020;
+  transition: 0.4s;
+}
+
+.btn-light{
+  background-color: #F2F0E3;
+  color: #202020;
+  transition: 0.4s;
+}
+.btn-light:hover{
+  background-color: #202020;
+  color: #F2F0E3;
+  transition: 0.4s;
+  box-shadow:0px 0px 0px 2px white inset;
+}
+.btn-outline-dark{
+  border: 2px solid #202020;
+  color: #202020;
+  transition: 0.4s;
+}
+.btn-outline-dark:hover{
+  background-color: #202020;
+  color: #F2F0E3;
+  transition: 0.4s;
+}
+.btn-outline-light{
+  border: 2px solid #F2F0E3;
+  color: #F2F0E3;
+  transition: 0.4s;
+}
+.btn-outline-light:hover{
+  background-color: #F2F0E3;
+  color: #202020;
+  transition: 0.4s;
+}
+
+.btn-accent{
+  background-color: #FF5B36;
+  color: #202020;
+  transition: 0.4s;
+}
+.btn-accent:hover{
+  box-shadow:0px 0px 0px 2px #FF5B36 inset;
+  background-color: #202020;
+  color: #FF5B36;
+  transition: 0.4s;
+}

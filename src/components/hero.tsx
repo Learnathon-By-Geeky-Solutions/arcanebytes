@@ -1,20 +1,20 @@
 import Link from "next/link";
 import React from "react";
 import { Kelly_Slab } from "next/font/google";
-import { Khand } from 'next/font/google'
+import { Khand } from "next/font/google";
 import Image from "next/image";
 const kelly = Kelly_Slab({
   weight: ["400"],
 });
 const khand = Khand({
-    weight: ["700"],
-  });
+  weight: ["700"],
+});
 
 const hero = () => {
   return (
     <>
-      <div className="flex justify-evenly">
-        <section className="mt-20">
+      <div className="flex my-10 justify-around">
+        <section className="mt-10">
           <h1 className={`${kelly.className} mb-5 text-7xl font-bold`}>
             Trust The Process
           </h1>
@@ -26,18 +26,33 @@ const hero = () => {
           <p className="mt-5 italic">– Karen Salmansohn</p>
         </section>
         <section>
-          <Image src="/image-1.svg" alt="hero" width={400} height={400} />
+          <Image src="/image-1.svg" alt="hero" width={300} height={400} />
         </section>
       </div>
-      <div className="bg-[#FF5B36] rounded-lg p-10">
-        <h1 className={`${khand.className} text-6xl leading-snug text-[#202020]  p-5`}>
-          Achieve your goals with personalized challenges, <br /> rewards, and progress
-          tracking.
+      <div className="flex justify-around bg-[#FF5B36] rounded-lg py-5 px-10">
+        <h1
+          className={`${khand.className} text-5xl leading-snug p-5 text-[#202020]`}
+        >
+          Achieve your goals with personalized challenges, <br /> rewards, and
+          progress tracking.
         </h1>
-        <span className="flex gap-5 justify-end"> 
-        <Link className=" px-6 py-2 rounded-lg font-color bg-[#202020] ml-5 text-[#]" href="/login">Get Started</Link>
-            <Link className=" border-2 border-[#202020] text-[#202020] font-semibold px-6 py-2  rounded-lg" href="/login">Learn More</Link>
-        </span>
+        <div className="flex flex-col gap-5 items-center">
+          <Image src="/mascot.svg" alt="login" width={170} height={100} />
+          <span className="flex gap-5 justify-end">
+            <Link
+              className=" px-6 py-2 rounded-lg btn-dark ml-5 text-[#]"
+              href="/login"
+            >
+              Get Started
+            </Link>
+            <Link
+              className=" btn-outline-dark font-medium px-6 py-2  rounded-lg"
+              href="/contact"
+            >
+              Learn More
+            </Link>
+          </span>
+        </div>
       </div>
     </>
   );

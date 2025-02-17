@@ -24,72 +24,82 @@ const LoginPage = () => {
             </h1>
           </span>
         </section>
-        <section className="flex flex-col w-1/3 items-center mt-10 px-10 py-5 border-4 border-[#FF5B36] rounded-lg">
-          <span>
-            <h1 className={`${kelly.className}  text-4xl`}>
-              Sign In <br />
-            </h1>
-          </span>
-          <div className="mt-5 w-full">
-            <form className="">
-              <div>
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="email"
-                  className="input secondary-theme dark-font w-full"
-                  required
-                />
-              </div>
-              <div className="">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <input
-                  type="password"
-                  placeholder="password"
-                  className="input secondary-theme dark-font w-full"
-                  required
-                />
-                <p className="my-3 text-xs">
-                  <Link href="/" className="font-bold underline">
-                    Forgot Password?
-                  </Link>
-                </p>
-              </div>
-              <div className="mt-5 flex justify-center items-center">
-                <button className="accent-theme w-40 rounded-lg p-3">
-                  Login
-                </button>
-              </div>
-              <p className="text-center mt-4 text-sm">
-                or continue with
-              </p>
-              <div className="mt-4 flex gap-5 justify-center items-center">
-                <button className="secondary-theme rounded-lg py-3 px-8">
-                  <Image src="/google.png" alt="login" width={20} height={20} />
-                </button>
-                <button className="secondary-theme rounded-lg py-3 px-8">
-                  <Image
-                    src="/facebook.png"
-                    alt="login"
-                    width={20}
-                    height={20}
+        <section className=" w-1/3 mt-10 bg-gradient-to-br from-[#591404] via-red-900 to-[#FF5B36] p-1 rounded-lg">
+          <div className=" flex flex-col items-center h-full w-full rounded-md px-10 py-5 main-theme">
+            <span>
+              <h1 className={`${kelly.className} text-4xl`}>
+                Sign In <br />
+              </h1>
+            </span>
+            <div className="mt-5 w-full">
+              <form className="">
+                <div>
+                  <label className="label">
+                    <span className="label-text">Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="email"
+                    className="input secondary-theme dark-font w-full"
+                    required
                   />
-                </button>
-                <button className="secondary-theme rounded-lg py-3 px-8">
-                  <Image src="/github.png" alt="login" width={20} height={20} />
-                </button>
-              </div>
-              <p className="text-center mt-4 text-sm">
-                  Don’t have an account yet?{" "}
+                </div>
+                <div className="">
+                  <label className="label">
+                    <span className="label-text">Password</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="password"
+                    className="input secondary-theme dark-font w-full"
+                    required
+                  />
+                  <p className="my-3 text-xs">
+                    <Link href="/" className="font-bold underline">
+                      Forgot Password?
+                    </Link>
+                  </p>
+                </div>
+                <div className="mt-5 flex justify-center items-center">
+                  <button className="btn-accent font-medium w-40 rounded-lg p-3">
+                    Login
+                  </button>
+                </div>
+                <p className="text-center mt-4 text-sm">or continue with</p>
+                <div className="mt-4 flex gap-5 justify-center items-center">
+                  <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-8">
+                    <Image
+                      src="/google.png"
+                      alt="login"
+                      width={20}
+                      height={20}
+                    />
+                  </button>
+                  <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-8">
+                    <Image
+                      src="/facebook.png"
+                      alt="login"
+                      width={20}
+                      height={20}
+                    />
+                  </button>
+                  <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-8">
+                    <Image
+                      src="/github.png"
+                      alt="login"
+                      width={20}
+                      height={20}
+                    />
+                  </button>
+                </div>
+                <p className="text-center mt-4 text-sm">
+                  Don&apos;t have an account yet?{" "}
                   <Link href="/register" className="font-bold underline">
                     Register Now
                   </Link>{" "}
-              </p>
-            </form>
+                </p>
+              </form>
+            </div>
           </div>
         </section>
       </main>
