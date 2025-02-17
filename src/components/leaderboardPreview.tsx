@@ -12,8 +12,8 @@ const leaderboardPreview = () => {
             LeaderBoard Preview 
         </h1>
         <section className='flex flex-col items-center my-20'>
-            <Image className='mb-10' src="/Top 3.png" width={500} height={200} />
-            <Image src="/Leaderboard.png" width={1000} height={500} />
+            <Image className='mb-10' alt='top-3' src="/Top 3.png" width={500} height={200} />
+            <Image src="/Leaderboard.png" alt='leaderboard' width={1000} height={500} />
         </section>
     </div>
   )

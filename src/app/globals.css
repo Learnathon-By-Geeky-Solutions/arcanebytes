@@ -6,11 +6,15 @@
   background-color: #202020;
 }
 .secondary-theme{
-  background-color: #2C2C2C;
+  background-color: #F2F0E3;
 }
 .accent-theme{
   background-color: #FF5B36;
 }
 .font-color{
   color: #F2F0E3;
+}
+
+.dark-font{
+  color: #202020;
 }

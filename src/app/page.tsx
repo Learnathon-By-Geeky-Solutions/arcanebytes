@@ -2,14 +2,18 @@ import React from 'react'
 import Navbar from '../components/navbar'
 import Hero from '../components/hero'
 import FeaturesOverview from '../components/featuresOverview'
-import LeadernoardPreview from '../components/leaderboardPreview'
+import LeaderboardPreview from '../components/leaderboardPreview'
+import Faq from '../components/faq'
+import Footer from '../components/footer'
 const page = () => {
   return (
     <div>
       <Navbar/>
       <Hero/>
       <FeaturesOverview/>
-      <LeadernoardPreview/>
+      <LeaderboardPreview/>
+      <Faq/>
+      <Footer/>
     </div>
   )
 }

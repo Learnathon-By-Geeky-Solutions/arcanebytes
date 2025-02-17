@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -40,12 +41,14 @@ const navbar = () => {
           </li>
           </ul>
         </div>
-        <Link href="/"><img src="logo.png"/></Link>
+        <Link href="/">
+                    <Image src="/logo.png" alt="logo" width={100} height={100} />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu text-lg menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
             <a>Leaderboard</a>

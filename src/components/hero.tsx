@@ -1,7 +1,8 @@
-import { Kelly_Slab } from "next/font/google";
-import { Khand } from 'next/font/google'
 import Link from "next/link";
 import React from "react";
+import { Kelly_Slab } from "next/font/google";
+import { Khand } from 'next/font/google'
+import Image from "next/image";
 const kelly = Kelly_Slab({
   weight: ["400"],
 });
@@ -24,8 +25,8 @@ const hero = () => {
           </p>
           <p className="mt-5 italic">– Karen Salmansohn</p>
         </section>
-        <section className="max-w-md ">
-          <img src="image-1.png" />
+        <section>
+          <Image src="/image-1.svg" alt="hero" width={400} height={400} />
         </section>
       </div>
       <div className="bg-[#FF5B36] rounded-lg p-10">

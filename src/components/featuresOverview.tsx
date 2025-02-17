@@ -1,18 +1,19 @@
 import React from "react";
 import { Kelly_Slab } from "next/font/google";
+import Image from "next/image";
 const kelly = Kelly_Slab({
   weight: ["400"],
 });
 const featuresOverview = () => {
   return (
-    <div className="my-20">
+    <div className="my-20 ">
       <h1 className={`${kelly.className} text-center text-5xl`}>
         Features Overview
       </h1>
-      <section className="flex mt-20">
+      <section className="flex items-center mt-20">
         <div className="card w-96 ">
           <figure>
-            <img src="icon.png"/>
+            <Image src="/icon.png" alt="icon" width={100} height={100} />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Challenge Yourself</h2>
@@ -21,7 +22,7 @@ const featuresOverview = () => {
         </div>
         <div className="card w-96 ">
           <figure>
-            <img src="icon (1).png"/>
+          <Image src="/icon (1).png" alt="icon" width={100} height={100} />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Earn Rewards</h2>
@@ -30,7 +31,7 @@ const featuresOverview = () => {
         </div>
         <div className="card w-96 ">
           <figure>
-            <img src="icon (2).png"/>
+          <Image src="/icon (2).png" alt="icon" width={100} height={100} />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Track Progress</h2>
@@ -39,7 +40,7 @@ const featuresOverview = () => {
         </div>
         <div className="card w-96 ">
           <figure>
-            <img src="icon (3).png"/>
+          <Image src="/icon (3).png" alt="icon" width={100} height={100} />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Beat Distractions</h2>
