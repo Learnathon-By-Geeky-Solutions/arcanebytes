@@ -48,10 +48,10 @@ const navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu text-lg menu-horizontal px-1">
           <li>
-            <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36] " href="/">Home</Link>
+            <Link className="delay-150 duration-300 ease-in-out focus:text-[#FF5B36]  active:text-[#FF5B36] " href="/">Home</Link>
           </li>
           <li>
-          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">Leaderboard</Link>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/leaderboard">Leaderboard</Link>
           </li>
           <li>
           <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"  href="/">Features</Link>
@@ -66,7 +66,7 @@ const navbar = () => {
       </div>
       <div className="navbar-end">
         <Link className=" px-10 py-2 rounded-full btn-outline-light" href="/login">Log In</Link>
-        <Link className=" px-4 py-2 rounded-full btn-light ml-5" href="/contact">Contact Us</Link>
+        <Link className=" px-6 py-2 rounded-full btn-light ml-3" href="/contact">Contact Us</Link>
       </div>
     </div>
   );

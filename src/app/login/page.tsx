@@ -24,7 +24,7 @@ const LoginPage = () => {
             </h1>
           </span>
         </section>
-        <section className=" w-1/3 mt-10 bg-gradient-to-br from-[#591404] via-red-900 to-[#FF5B36] p-1 rounded-lg">
+        <section className=" w-1/3 mt-10 bg-gradient-to-br from-[#591404] via-red-900 to-[#FF5B36] transition ease-in-out delay-300 duration-400 hover:bg-gradient-to-tr p-1 rounded-lg">
           <div className=" flex flex-col items-center h-full w-full rounded-md px-10 py-5 main-theme">
             <span>
               <h1 className={`${kelly.className} text-4xl`}>

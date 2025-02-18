@@ -95,13 +95,13 @@ const RegisterPage = () => {
           <span>
             <h1 className={`${kelly.className} text-6xl`}>
               Start Your Journey <br />
-              <p className="text-3xl mt-5">
+              <p className="text-5xl mt-5">
                 with <span className="text-[#FF5B36]">K</span>aizen
               </p>
             </h1>
           </span>
           <span>
-            <Image src="/Image-3.svg" alt="login" width={480} height={300} />
+            <Image src="/Image-3.svg" alt="login" width={460} height={300} />
           </span>
         </section>
       </main>

@@ -13,7 +13,7 @@ const khand = Khand({
 const hero = () => {
   return (
     <>
-      <div className="flex my-10 justify-around">
+      <div className="flex mt-5 mb-10 justify-around">
         <section className="mt-10">
           <h1 className={`${kelly.className} mb-5 text-7xl font-bold`}>
             Trust The Process
