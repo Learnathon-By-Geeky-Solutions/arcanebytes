@@ -48,7 +48,7 @@ const navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu text-lg menu-horizontal px-1">
           <li>
-            <Link className="delay-150 duration-300 ease-in-out focus:text-[#FF5B36]  active:text-[#FF5B36] " href="/">Home</Link>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36] " href="/">Home</Link>
           </li>
           <li>
           <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/leaderboard">Leaderboard</Link>
@@ -60,7 +60,7 @@ const navbar = () => {
           <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">Blogs</Link>
           </li>
           <li>
-          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">About Us</Link>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/about">About Us</Link>
           </li>
         </ul>
       </div>
