@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Lexend } from 'next/font/google'
+import Navbar from '../components/navbar'
 
 const lexend = Lexend({ 
   weight: ['400','500','600', '700'],
@@ -21,8 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="main-theme font-color px-20 py-5">
-        <main className={lexend.className}>
+      <body className={`${lexend.className} main-theme font-color px-20 py-5`}>
+        <Navbar />
+        <main>
         {children}
         </main>
       </body>

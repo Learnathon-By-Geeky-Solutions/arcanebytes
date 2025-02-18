@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../components/navbar";
 import Image from "next/image";
 import { Kelly_Slab } from "next/font/google";
 import Link from "next/link";
@@ -9,7 +8,6 @@ const kelly = Kelly_Slab({
 const LoginPage = () => {
   return (
     <div>
-      <Navbar />
       <main className="flex justify-evenly mx-10 my-5">
         <section className="flex">
           <span>

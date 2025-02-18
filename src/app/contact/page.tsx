@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../components/navbar";
 import Image from "next/image";
 import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
@@ -8,7 +7,6 @@ const kelly = Kelly_Slab({
 const ContactPage = () => {
   return (
     <div>
-      <Navbar />
       <main className="flex justify-center mx-20 my-5">
         <section className="flex w-1/2 flex-col">
           <span>
