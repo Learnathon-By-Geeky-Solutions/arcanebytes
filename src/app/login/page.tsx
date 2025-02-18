@@ -4,6 +4,7 @@ import { Kelly_Slab } from "next/font/google";
 import Link from "next/link";
 const kelly = Kelly_Slab({
   weight: ["400"],
+  subsets: ["latin"],
 });
 const LoginPage = () => {
   return (

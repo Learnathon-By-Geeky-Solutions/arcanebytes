@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
+  subsets: ["latin"],
 });
 const ContactPage = () => {
   return (

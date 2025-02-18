@@ -1,15 +1,14 @@
 import React from "react";
-import Navbar from "../../components/navbar";
 import Image from "next/image";
 import { Kelly_Slab } from "next/font/google";
 import Link from "next/link";
 const kelly = Kelly_Slab({
   weight: ["400"],
+  subsets: ["latin"],
 });
 const RegisterPage = () => {
   return (
     <div>
-      <Navbar />
       <main className="flex justify-around mt-10">
         <section className="flex flex-col w-2/5 items-center px-10 py-5 border-4 border-[#FF5B36] rounded-lg">
           <span>
