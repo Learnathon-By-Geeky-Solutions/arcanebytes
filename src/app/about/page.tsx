@@ -1,5 +1,6 @@
 import React from "react";
 import { Kelly_Slab } from "next/font/google";
+import Link from "next/link";
 const kelly = Kelly_Slab({
   weight: ["400"],
 });
@@ -7,7 +8,7 @@ const kelly = Kelly_Slab({
 const AboutPage = () => {
   return (
     <div>
-      <h1 className={`${kelly.className} text-center py-5 text-7xl`}>
+      <h1 className={`${kelly.className} text-center py-5 text-6xl`}>
         About <span className="text-[#FF5B36]"> K</span>aizen
       </h1>
       <section className="flex flex-col justify-center items-center">
@@ -16,7 +17,7 @@ const AboutPage = () => {
         >
           Project Overview
         </h1>
-        <section className="text-justify max-w-5xl">
+        <article className="text-justify my-5 max-w-5xl">
           <b>Kaizen</b> is an innovative, gamified productivity application
           designed to help individuals overcome procrastination and build
           positive habits through continuous improvement. Inspired by the
@@ -31,21 +32,15 @@ const AboutPage = () => {
           ensure users stay focused and on track. Kaizen transforms the journey
           of productivity into an exciting adventure, proving that every small
           step counts toward achieving greatness.
-        </section>
-        <h3 className="text-3xl font-bold py-5">Core Concepts</h3>
-        <section className="text-justify max-w-3xl mb-10">
-          <b>Objectives: </b>
-          <li>Help users overcome procrastination by breaking large goals
-          into smaller, manageable tasks.</li>
-          <li>Reward users with virtual points,
-          badges, and delayed gratification for staying on track. </li>
-          <li>Use AI to
-          provide personalized recommendations and progress analysis.</li> <br />
-            <b>Target Audience: </b> Students, freelancers, and professionals struggling with
-          productivity.  <br /> <br />
-          <b>Unique Selling Point: </b>Combines psychological principles
-          with gamification, creating a fun and engaging experience to drive
-          behavior change.
+        </article>
+        <h3 className="text-center text-2xl font-medium py-5">
+          Developed By - <Link className="accent-font" href={'https://github.com/Learnathon-By-Geeky-Solutions/arcanebytes'} target="_blank">ArcaneBytes</Link>
+
+        </h3>
+        <section className={`${kelly.className} flex flex-col gap-5 text-xl justify-center items-center mb-10`}>
+          <Link href={'https://github.com/twfksh'} target="_blank"> Toufiq Ahmed Shishir</Link>
+          <Link href={'https://github.com/fahimalshihab'} target="_blank">Fahim Al Shihab</Link>
+          <Link href={'https://github.com/TanzilRayhan'} target="_blank">Tanzil Rayhan</Link>
         </section>
       </section>
     </div>

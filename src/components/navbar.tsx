@@ -54,13 +54,13 @@ const navbar = () => {
           <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/leaderboard">Leaderboard</Link>
           </li>
           <li>
-          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"  href="/">Features</Link>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"  href="/features">Features</Link>
           </li>
           <li>
           <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">Blogs</Link>
           </li>
           <li>
-          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/about">About Us</Link>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/about">About</Link>
           </li>
         </ul>
       </div>

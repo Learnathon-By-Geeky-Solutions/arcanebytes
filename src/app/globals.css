@@ -65,7 +65,16 @@
   color: #202020;
   transition: 0.4s;
 }
-
+.btn-outline-accent{
+  border: 2px solid #FF5B36;
+  color: #FF5B36;
+  transition: 0.4s;
+}
+.btn-outline-accent:hover{
+  background-color: #FF5B36;
+  color: #202020;
+  transition: 0.4s;
+}
 .btn-accent{
   background-color: #FF5B36;
   color: #202020;
