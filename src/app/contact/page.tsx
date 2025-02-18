@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Image4 from "../../public/Image-4.svg";
+import Image4 from "../../../public/image-4.svg";
 import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
