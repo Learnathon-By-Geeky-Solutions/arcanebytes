@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Image4 from "../../public/Image-4.svg";
 import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
@@ -11,7 +12,7 @@ const ContactPage = () => {
       <main className="flex justify-center mx-20 my-5">
         <section className="flex w-1/2 flex-col">
           <span>
-            <Image src="/Image-4.svg" alt="login" width={400} height={300} />
+            <Image src={Image4} alt="login" width={400} height={300} />
           </span>
           <span>
             <h1 className={`${kelly.className} text-7xl`}>

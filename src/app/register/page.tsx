@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Image3 from "../../public/Image-3.svg";
 import { Kelly_Slab } from "next/font/google";
 import Link from "next/link";
 const kelly = Kelly_Slab({
@@ -100,7 +101,7 @@ const RegisterPage = () => {
             </h1>
           </span>
           <span>
-            <Image src="/Image-3.svg" alt="login" width={460} height={300} />
+            <Image src={Image3} alt="login" width={460} height={300} />
           </span>
         </section>
       </main>
