@@ -5,9 +5,11 @@ import { Khand } from "next/font/google";
 import Image from "next/image";
 const kelly = Kelly_Slab({
   weight: ["400"],
+  subsets: ['latin'],
 });
 const khand = Khand({
   weight: ["700"],
+  subsets: ['latin'],
 });
 
 const hero = () => {

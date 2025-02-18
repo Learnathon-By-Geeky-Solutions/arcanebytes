@@ -2,6 +2,7 @@ import React from "react";
 import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
+  subsets: ['latin'],
 });
 const faq = () => {
   return (
