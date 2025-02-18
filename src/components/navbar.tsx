@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Logo from "../../public/Logo.png"; 
 
 const navbar = () => {
   return (
@@ -42,7 +43,7 @@ const navbar = () => {
           </ul>
         </div>
         <Link className="delay-150 duration-300 ease-in-out hover:scale-110" href="/">
-                    <Image src="../../public/Logo.png" alt="logo" width={100} height={100} />
+                    <Image src={Logo} alt="logo" width={100} height={100} />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

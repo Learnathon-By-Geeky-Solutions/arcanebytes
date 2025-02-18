@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import Logo from "../../public/Logo.png"; 
 const footer = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const footer = () => {
         </section>
       <footer className="footer bg-base-200 text-base-content p-10">
         <aside>
-          <Image src="../../public/Logo.png" alt="logo" width={100} height={100} />
+          <Image src={Logo} alt="logo" width={100} height={100} />
           <p>
             Project: Kaizen
             <br />
