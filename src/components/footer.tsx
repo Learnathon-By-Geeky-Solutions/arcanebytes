@@ -5,11 +5,11 @@ const footer = () => {
   return (
     <div>
         <section className="my-10 flex flex-col items-center">
-        <Image src="/Testimonial.png" alt="logo" width={1200} height={200} />
+        <Image src="./Testimonial.png" alt="logo" width={1200} height={200} />
         </section>
       <footer className="footer bg-base-200 text-base-content p-10">
         <aside>
-          <Image src="/logo.png" alt="logo" width={100} height={100} />
+          <Image src="./logo.png" alt="logo" width={100} height={100} />
           <p>
             Project: Kaizen
             <br />

@@ -42,7 +42,7 @@ const navbar = () => {
           </ul>
         </div>
         <Link className="delay-150 duration-300 ease-in-out hover:scale-110" href="/">
-                    <Image src="/logo.png" alt="logo" width={100} height={100} />
+                    <Image src="./logo.png" alt="logo" width={100} height={100} />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
