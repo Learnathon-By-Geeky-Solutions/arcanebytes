@@ -1,7 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/Logo.png";
-import Testimonial from "../../public/Testimonial.png";
+import { Kelly_Slab } from "next/font/google";
+const kelly = Kelly_Slab({
+  weight: ["400"],
+  subsets: ["latin"],
+});import Testimonial from "../../public/Testimonial.png";
+import Link from "next/link";
 const footer = () => {
   return (
     <div>
@@ -10,7 +14,11 @@ const footer = () => {
       </section>
       <footer className="footer bg-base-200 text-base-content p-10">
         <aside>
-          <Image src={Logo} alt="logo" width={200} height={100} />
+          <Link href="/">
+            <h1 className={`${kelly.className} text-5xl`}>
+               <span className="text-[#FF5B36]">K</span>aizen
+            </h1>
+          </Link>
           <p>
             Project: Kaizen
             <br />
@@ -37,22 +45,6 @@ const footer = () => {
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
         </nav>
-        <form>
-          <h6 className="footer-title">Newsletter</h6>
-          <fieldset className="form-control w-80">
-            <label className="label">
-              <span className="label-text">Enter your email address</span>
-            </label>
-            <div className="join">
-              <input
-                type="text"
-                placeholder="username@site.com"
-                className="input input-bordered join-item"
-              />
-              <button className="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </fieldset>
-        </form>
       </footer>
     </div>
   );
