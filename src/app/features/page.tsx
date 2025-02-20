@@ -18,7 +18,7 @@ const FeaturesPage = () => {
           User-End Features
         </h1>
         <section className="my-5 place-content-center place-items-center">
-          <div className="flex gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="card btn-outline-accent w-96">
               <div className="card-body">
                 <h2 className=" font-semibold text-xl text-center">
@@ -35,7 +35,7 @@ const FeaturesPage = () => {
             <div className="card btn-outline-accent w-96">
               <div className="card-body">
                 <h2 className=" font-semibold text-xl text-center">
-                Gamification & System Features
+                  Gamification & System Features
                 </h2>
                 <span className="font-color">
                   <li> Reward System</li>
@@ -43,26 +43,25 @@ const FeaturesPage = () => {
                 </span>
               </div>
             </div>
-          </div>
-          <div className="flex my-5 gap-5">
             <div className="card btn-outline-accent w-96">
               <div className="card-body">
                 <h2 className=" font-semibold text-xl text-center">
-                Additional Productivity Tools
+                  Additional Productivity Tools
                 </h2>
                 <span className="font-color">
                   <li>Flashcards & Learning Support </li>
                   <li> Daily Motivation </li>
-                  <li>  Performance Tracking </li>
+                  <li> Performance Tracking </li>
                 </span>
               </div>
             </div>
             <div className="card btn-outline-accent w-96">
               <div className="card-body">
                 <h2 className=" font-semibold text-xl text-center">
-                Goal Tracking & Social Engagement                </h2>
+                  Goal Tracking & Social Engagement{" "}
+                </h2>
                 <span className="font-color">
-                  <li>  Goal Progress & Timeline </li>
+                  <li> Goal Progress & Timeline </li>
                   <li> Community & Leaderboards </li>
                 </span>
               </div>
