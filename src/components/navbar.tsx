@@ -70,6 +70,14 @@ const navbar = () => {
                 About
               </Link>
             </li>
+            <li>
+              <Link
+                className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"
+                href="/contact"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <Link
@@ -127,7 +135,7 @@ const navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end flex flex-wrap gap-2">
+      <div className="navbar-end">
         <Link
           className="text-sm px-2 lg:px-10 py-2 rounded-full btn-outline-light"
           href="/login"
@@ -135,7 +143,7 @@ const navbar = () => {
           Log In
         </Link>
         <Link
-          className="text-sm px-2 lg:px-6 py-2 rounded-full btn-light ml-3"
+          className="hidden md:block text-sm px-2 lg:px-6 py-2 rounded-full btn-light ml-3"
           href="/contact"
         >
           Contact Us
