@@ -8,7 +8,7 @@ const kelly = Kelly_Slab({
 const navbar = () => {
   return (
     <div className="navbar">
-      <div className="navbar-start ">
+      <div className="navbar-start ml-[-24px]">
         <div className="dropdown ">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg

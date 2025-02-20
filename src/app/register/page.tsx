@@ -10,8 +10,8 @@ const kelly = Kelly_Slab({
 const RegisterPage = () => {
   return (
     <div>
-      <main className="flex justify-around mt-10">
-        <section className="flex flex-col w-2/5 items-center px-10 py-5 border-4 border-[#FF5B36] rounded-lg">
+      <main className="flex flex-col-reverse md:flex-row justify-around mt-5 md:mt-10">
+        <section className="flex flex-col mt-10 md:mt-0 md:w-2/5 items-center px-5 md:px-10 py-5 border-4 border-[#FF5B36] rounded-lg">
           <span>
             <h1 className={`${kelly.className} text-4xl`}>
               Sign Up <br />
@@ -21,7 +21,7 @@ const RegisterPage = () => {
             <form className="">
               <div>
                 <label className="label">
-                  <span className="label-text">Username</span>
+                  <span className="label-text text-xs md:text-sm">Username</span>
                 </label>
                 <input
                   type="text"
@@ -32,7 +32,7 @@ const RegisterPage = () => {
               </div>
               <div>
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-xs md:text-sm">Email</span>
                 </label>
                 <input
                   type="email"
@@ -44,7 +44,7 @@ const RegisterPage = () => {
               <div className="flex gap-3">
                 <div className="">
                   <label className="label">
-                    <span className="label-text">Password</span>
+                    <span className="label-text text-xs md:text-sm">Password</span>
                   </label>
                   <input
                     type="password"
@@ -55,7 +55,7 @@ const RegisterPage = () => {
                 </div>
                 <div className="">
                   <label className="label">
-                    <span className="label-text">Confirm Password</span>
+                    <span className="label-text text-xs md:text-sm">Confirm Password</span>
                   </label>
                   <input
                     type="password"
@@ -71,20 +71,25 @@ const RegisterPage = () => {
                 </button>
               </div>
               <p className="text-center mt-4 text-sm">or continue with</p>
-              <div className="mt-3 flex gap-5 justify-center items-center">
-                <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-8">
+              <div className="mt-4 flex gap-2 md:gap-5 justify-center items-center">
+                <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-4 md:px-8">
                   <Image src="/google.png" alt="login" width={20} height={20} />
                 </button>
-                <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-8">
-                  <Image src="/facebook.png" alt="login" width={20} height={20} />
+                <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-4 md:px-8">
+                  <Image
+                    src="/facebook.png"
+                    alt="login"
+                    width={20}
+                    height={20}
+                  />
                 </button>
-                <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-8">
+                <button className="secondary-theme transition delay-150 duration-300 ease-in-out hover:scale-110 rounded-lg py-3 px-4 md:px-8">
                   <Image src="/github.png" alt="login" width={20} height={20} />
                 </button>
               </div>
-              <p className="text-center mt-3 text-sm">
+              <p className="text-center mt-3 text-xs md:text-sm">
                 Already have an account yet?
-                <Link href="/login" className="font-bold pl-3 underline">
+                <Link href="/login" className="font-bold pl-1 md:pl-3 underline">
                   Login Now
                 </Link>
               </p>
@@ -93,14 +98,14 @@ const RegisterPage = () => {
         </section>
         <section className="flex flex-col">
           <span>
-            <h1 className={`${kelly.className} text-6xl`}>
+            <h1 className={`${kelly.className} text-4xl md:text-6xl`}>
               Start Your Journey <br />
-              <p className="text-5xl mt-5">
+              <p className="text-3xl md:text-5xl mt-2 md:mt-5">
                 with <span className="text-[#FF5B36]">K</span>aizen
               </p>
             </h1>
           </span>
-          <span>
+          <span className="hidden md:block">
             <Image src={Image3} alt="login" width={460} height={300} />
           </span>
         </section>

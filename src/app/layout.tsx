@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lexend.className} main-theme font-color px-5 lg:px-20 py-5`}>
+      <body className={`${lexend.className} main-theme font-color px-10 lg:px-20 py-5`}>
         <Navbar />
         <main>
         {children}

@@ -20,7 +20,7 @@ const hero = () => {
           <h1 className={`${kelly.className} mb-5 text-5xl md:text-7xl font-bold`}>
             Trust The Process
           </h1>
-          <p className="mt-10 text-lg max-w-lg">
+          <p className="mt-10 md:text-lg md:max-w-lg">
             “Hold the vision. Drop the excuses. Remember your why. <br />
             Swerve around obstacles. Trust the process. <br />
             Happiness and success will find you.”
