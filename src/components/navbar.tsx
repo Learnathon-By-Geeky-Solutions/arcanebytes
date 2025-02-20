@@ -5,9 +5,9 @@ import Logo from "../../public/Logo.png";
 
 const navbar = () => {
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <div className="dropdown">
+    <div className="navbar">
+      <div className="navbar-start ">
+        <div className="dropdown ">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,21 +26,24 @@ const navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content main-theme rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-            <a>Home</a>
+          <li>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36] " href="/">Home</Link>
           </li>
           <li>
-            <a>Leaderboard</a>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/leaderboard">Leaderboard</Link>
           </li>
           <li>
-            <a>Features</a>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"  href="/features">Features</Link>
           </li>
           <li>
-            <a>About</a>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/">Blogs</Link>
           </li>
-          </ul>
+          <li>
+          <Link className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]" href="/about">About</Link>
+          </li>
+        </ul>
         </div>
         <Link className="delay-150 duration-300 ease-in-out hover:scale-110" href="/">
                     <Image src={Logo} alt="logo" width={100} height={100} />
@@ -66,8 +69,8 @@ const navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link className=" px-10 py-2 rounded-full btn-outline-light" href="/login">Log In</Link>
-        <Link className=" px-6 py-2 rounded-full btn-light ml-3" href="/contact">Contact Us</Link>
+        <Link className="sm:text-sm px-2 lg:px-10 py-2 rounded-full btn-outline-light" href="/login">Log In</Link>
+        <Link className="sm:text-sm px-2 lg:px-6 py-2 rounded-full btn-light ml-3" href="/contact">Contact Us</Link>
       </div>
     </div>
   );
