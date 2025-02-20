@@ -69,8 +69,8 @@ const navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link className="sm:text-sm px-2 lg:px-10 py-2 rounded-full btn-outline-light" href="/login">Log In</Link>
-        <Link className="sm:text-sm px-2 lg:px-6 py-2 rounded-full btn-light ml-3" href="/contact">Contact Us</Link>
+        <Link className="text-sm px-2 lg:px-10 py-2 rounded-full btn-outline-light" href="/login">Log In</Link>
+        <Link className="text-sm px-2 lg:px-6 py-2 rounded-full btn-light ml-3" href="/contact">Contact Us</Link>
       </div>
     </div>
   );

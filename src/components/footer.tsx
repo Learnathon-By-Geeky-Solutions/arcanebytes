@@ -10,7 +10,7 @@ const footer = () => {
       </section>
       <footer className="footer bg-base-200 text-base-content p-10">
         <aside>
-          <Image src={Logo} alt="logo" width={100} height={100} />
+          <Image src={Logo} alt="logo" width={200} height={100} />
           <p>
             Project: Kaizen
             <br />

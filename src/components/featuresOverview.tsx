@@ -13,11 +13,11 @@ const kelly = Kelly_Slab({
 const featuresOverview = () => {
   return (
     <div className="my-20 ">
-      <h1 className={`${kelly.className} text-center text-5xl`}>
+      <h1 className={`${kelly.className} text-center text-3xl md:text-5xl`}>
         Features Overview
       </h1>
-      <section className="flex items-center mt-20">
-        <div className="card w-96 ">
+      <section className="flex flex-wrap justify-center items-center mt-20">
+        <div className="card w-80 ">
           <figure>
             <Image src={Icon} alt="icon" width={100} height={100} />
           </figure>
@@ -26,7 +26,7 @@ const featuresOverview = () => {
             <p>Create custom challenges and build streaks.</p>
           </div>
         </div>
-        <div className="card w-96 ">
+        <div className="card w-80 ">
           <figure>
           <Image src={Icon1} alt="icon" width={100} height={100} />
           </figure>
@@ -35,7 +35,7 @@ const featuresOverview = () => {
             <p>Gain XP and unlock premium badges.</p>
           </div>
         </div>
-        <div className="card w-96 ">
+        <div className="card w-80 ">
           <figure>
           <Image src={Icon2} alt="icon" width={100} height={100} />
           </figure>
@@ -44,7 +44,7 @@ const featuresOverview = () => {
             <p>Visualize your growth through timelines and graphs.</p>
           </div>
         </div>
-        <div className="card w-96 ">
+        <div className="card w-80 ">
           <figure>
           <Image src={Icon3} alt="icon" width={100} height={100} />
           </figure>

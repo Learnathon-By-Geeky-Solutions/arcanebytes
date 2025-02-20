@@ -7,7 +7,7 @@ const kelly = Kelly_Slab({
 const faq = () => {
   return (
     <div>
-      <h1 className={`${kelly.className} text-center text-5xl`}>
+      <h1 className={`${kelly.className} text-center text-3xl md:text-5xl`}>
         Frequently Asked Questions (FAQ)
       </h1>
       <section className="max-w-4xl mx-auto my-20">
