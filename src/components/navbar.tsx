@@ -135,7 +135,7 @@ const navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end ml-24">
         <Link
           className="text-sm px-2 lg:px-10 py-2 rounded-full btn-outline-light"
           href="/login"

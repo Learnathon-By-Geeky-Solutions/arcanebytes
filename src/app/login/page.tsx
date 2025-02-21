@@ -16,7 +16,7 @@ const LoginPage = () => {
             <Image src={Image2} alt="login" width={300} height={300} />
           </span>
           <span >
-            <h1 className={`${kelly.className}  md:mt-10 text-4xl md:text-7xl`}>
+            <h1 className={`${kelly.className}  md:mt-10 text-5xl md:text-7xl`}>
               Stay Focused <br />
               <p className="text-3xl md:text-5xl mt-3 md:mt-10">
                 with <span className="text-[#FF5B36]">K</span>aizen

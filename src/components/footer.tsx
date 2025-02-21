@@ -9,8 +9,8 @@ import Link from "next/link";
 const footer = () => {
   return (
     <div>
-      <section className="my-10 flex flex-col items-center">
-        <Image src={Testimonial} alt="logo" width={1200} height={200} />
+      <section className="my-10 place-items-center hidden md:block">
+        <Image className="" src={Testimonial} alt="logo" width={1600} height={200} />
       </section>
       <footer className="footer bg-base-200 text-base-content p-10">
         <aside>

@@ -9,16 +9,16 @@ const kelly = Kelly_Slab({
 const AboutPage = () => {
   return (
     <div>
-      <h1 className={`${kelly.className} text-center py-5 text-6xl`}>
+      <h1 className={`${kelly.className} text-center py-5 text-4xl md:text-6xl`}>
         About <span className="text-[#FF5B36]"> K</span>aizen
       </h1>
       <section className="flex flex-col justify-center items-center">
         <h1
-          className={`${kelly.className} text-center px-16 accent-theme rounded-xl py-2 mb-5 text-4xl`}
+          className={`${kelly.className} text-center px-10 md:px-16 accent-theme rounded-xl py-2 md:mb-5 text-2xl md:text-4xl`}
         >
           Project Overview
         </h1>
-        <article className="text-justify my-5 max-w-5xl">
+        <article className="text-justify text-xs md:text-lg my-5 md:max-w-6xl">
           <b>Kaizen</b> is an innovative, gamified productivity application
           designed to help individuals overcome procrastination and build
           positive habits through continuous improvement. Inspired by the

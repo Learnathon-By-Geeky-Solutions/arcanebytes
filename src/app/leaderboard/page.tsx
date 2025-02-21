@@ -11,11 +11,10 @@ const Leaderboard = () => {
   return (
     <div>
       <div className="flex justify-center">
-      <h1 className={`${kelly.className} rounded-lg w-1/3 text-center btn-accent py-2 mt-5 text-5xl`}>
+      <h1 className={`${kelly.className} rounded-lg px-10 md:w-1/3 text-center btn-accent py-2 mt-5 text-3xl md:text-5xl`}>
         LeaderBoard
       </h1>
       </div>
-    
       <Top3 />
       <TopStats />
       <LeaderboardTable />

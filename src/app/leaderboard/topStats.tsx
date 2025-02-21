@@ -5,7 +5,7 @@ const topStats = () => {
     <div className="flex mt-5 justify-center">
       <div className="stats border-4 border-[#FF5B36]">
         <div className="stat">
-          <div className="stat-figure text-primary">
+          <div className="stat-figure hidden md:block text-primary">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -21,13 +21,12 @@ const topStats = () => {
             </svg>
             
           </div>
-          <div className="stat-title">Total Tasks</div>
-          <div className="stat-value text-primary">100</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="stat-title text-xs md:text-base">Total Tasks</div>
+          <div className="stat-value text-base md:text-3xl text-primary">100</div>
         </div>
 
         <div className="stat">
-          <div className="stat-figure text-secondary">
+          <div className="stat-figure hidden md:block text-secondary">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -42,22 +41,20 @@ const topStats = () => {
               ></path>
             </svg>
           </div>
-          <div className="stat-title">Total Rewards</div>
-          <div className="stat-value text-secondary">1000</div>
-          <div className="stat-desc">12% more than last month</div>
+          <div className="stat-title text-xs md:text-base">Total Rewards</div>
+          <div className="stat-value  text-base md:text-3xl  text-secondary">1000</div>
         </div>
 
         <div className="stat">
-          <div className="stat-figure text-secondary">
+          <div className="stat-figure hidden md:block text-secondary">
             <div className="avatar online">
-              <div className="w-16 rounded-full">
+              <div className="w-8 md:w-16 rounded-full">
                 <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
               </div>
             </div>
           </div>
-          <div className="stat-value">86%</div>
-          <div className="stat-title">Tasks done</div>
-          <div className="stat-desc text-secondary">31 tasks remaining</div>
+          <div className="stat-title text-xs md:text-base">Tasks done</div>
+          <div className="stat-value  text-base md:text-3xl">86%</div>
         </div>
       </div>
     </div>

@@ -37,9 +37,7 @@ const LeaderboardTable = () => {
                 </div>
               </td>
               <td>
-                Wyman-Ledner
-                <br />
-                <span className="badge badge-ghost badge-sm">
+                <span className="">
                   Community Outreach Specialist
                 </span>
               </td>
@@ -65,14 +63,11 @@ const LeaderboardTable = () => {
                   </div>
                   <div>
                     <div className="font-bold">Hart Hagerty</div>
-                    <div className="text-sm opacity-50">United States</div>
                   </div>
                 </div>
               </td>
               <td>
-                Zemlak, Daniel and Leannon
-                <br />
-                <span className="badge badge-ghost badge-sm">
+                <span className="">
                   Desktop Support Technician
                 </span>
               </td>
@@ -98,14 +93,11 @@ const LeaderboardTable = () => {
                   </div>
                   <div>
                     <div className="font-bold">Brice Swyre</div>
-                    <div className="text-sm opacity-50">China</div>
                   </div>
                 </div>
               </td>
               <td>
-                Carroll Group
-                <br />
-                <span className="badge badge-ghost badge-sm">
+                <span className="">
                   Tax Accountant
                 </span>
               </td>
@@ -131,14 +123,11 @@ const LeaderboardTable = () => {
                   </div>
                   <div>
                     <div className="font-bold">Marjy Ferencz</div>
-                    <div className="text-sm opacity-50">Russia</div>
                   </div>
                 </div>
               </td>
               <td>
-                Rowe-Schoen
-                <br />
-                <span className="badge badge-ghost badge-sm">
+                <span className="">
                   Office Assistant I
                 </span>
               </td>

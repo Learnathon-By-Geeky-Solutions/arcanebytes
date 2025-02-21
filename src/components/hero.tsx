@@ -16,16 +16,16 @@ const hero = () => {
   return (
     <>
       <div className=" flex flex-wrap mt-5 mb-10 justify-around">
-        <section className="mt-10 mb-10">
-          <h1 className={`${kelly.className} mb-5 text-5xl md:text-7xl font-bold`}>
+        <section className="mt-10 mb-5">
+          <h1 className={`${kelly.className} mb-5 text-4xl md:text-7xl font-bold`}>
             Trust The Process
           </h1>
-          <p className="mt-10 md:text-lg md:max-w-lg">
+          <p className="mt-10 text-xs md:text-lg md:max-w-lg">
             “Hold the vision. Drop the excuses. Remember your why. <br />
             Swerve around obstacles. Trust the process. <br />
             Happiness and success will find you.”
           </p>
-          <p className="mt-5 italic">– Karen Salmansohn</p>
+          <p className="mt-5 text-xs md:text-base italic">– Karen Salmansohn</p>
         </section>
         <section>
           <Image src="/image-1.svg" alt="hero" width={300} height={400} />
@@ -33,10 +33,11 @@ const hero = () => {
       </div>
       <div className="flex flex-wrap justify-around accent-theme rounded-lg py-5 px-5 md:px-10">
         <h1
-          className={`${khand.className} text-4xl md:text-5xl leading-snug p-5 text-[#202020]`}
+          className={`${khand.className} text-4xl md:text-5xl leading-normal p-5 text-[#202020]`}
         >
-          Achieve your goals with personalized challenges, <br /> rewards, and
+          Achieve your goals with personalized challenges, <div className="md:pt-5"> rewards, and
           progress tracking.
+            </div> 
         </h1>
         <div className="flex flex-col gap-5 items-center">
           <Image src="/mascot.svg" alt="login" width={170} height={100} />
