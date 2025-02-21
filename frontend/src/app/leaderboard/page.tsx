@@ -6,7 +6,16 @@ import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ["latin"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Kaizen Leaderboard',
+  description: 'View the top performers on the Kaizen app and track your progress',
+};
 const Leaderboard = () => {
   return (
     <div>

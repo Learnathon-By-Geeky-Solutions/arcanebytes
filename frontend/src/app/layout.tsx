@@ -7,8 +7,9 @@ const lexend = Lexend({
   weight: ['400','500','600', '700'],
   subsets: ['latin'],
   display: 'swap',
+  fallback: ["system-ui", "arial"],
+  preload: true,
 })
-
 
 export const metadata: Metadata = {
   title: "Kaizen - ArcaneBytes",

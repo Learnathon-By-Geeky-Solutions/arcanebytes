@@ -6,7 +6,16 @@ import Link from "next/link";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ["latin"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Kaizen Sign-Up',  
+  description: 'Register for the Kaizen app to start your productivity journey',
+};
 const RegisterPage = () => {
   return (
     <div>

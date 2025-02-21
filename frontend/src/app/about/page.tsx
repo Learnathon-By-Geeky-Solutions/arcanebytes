@@ -4,8 +4,16 @@ import Link from "next/link";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ["latin"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'About Kaizen',
+  description: 'Learn more about the Kaizen app and its mission to help users achieve their goals through continuous improvement',
+};
 const AboutPage = () => {
   return (
     <div>
