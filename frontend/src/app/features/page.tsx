@@ -3,7 +3,16 @@ import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ["latin"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Kaizen Features',
+  description: 'Explore the features of the Kaizen app and how it can help you improve your productivity',
+};
 
 const FeaturesPage = () => {
   return (
