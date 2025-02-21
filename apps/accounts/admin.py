@@ -11,17 +11,20 @@ class CustomUserAdmin(UserAdmin):
     model = User
     list_display = (
         "email",
+        "pscore",
         "is_staff",
         "is_active",
+        "created_at",
     )
     list_filter = (
         "email",
         "is_staff",
         "is_active",
+        "created_at",
     )
     fieldsets = (
         (None, {"fields": ("email", "password")}),
-        ("Personal Info", {"fields": ("img_url", "about")}),
+        ("Personal Info", {"fields": ("img_url", "about", "pscore", "created_at")}),
         (
             "Permissions",
             {"fields": ("is_staff", "is_active", "groups", "user_permissions")},
@@ -38,6 +41,7 @@ class CustomUserAdmin(UserAdmin):
                     "password2",
                     "img_url",
                     "about",
+                    "pscore",
                     "is_staff",
                     "is_active",
                     "groups",
@@ -46,6 +50,7 @@ class CustomUserAdmin(UserAdmin):
             },
         ),
     )
+    readonly_fields = ("created_at",)
     search_fields = ("email",)
     ordering = ("email",)
 

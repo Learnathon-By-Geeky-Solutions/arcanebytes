@@ -10,6 +10,7 @@ class CustomUserCreationForm(UserCreationForm):
             "email",
             "img_url",
             "about",
+            "pscore",
         )
 
 
@@ -20,6 +21,7 @@ class CustomUserChangeForm(UserChangeForm):
             "email",
             "img_url",
             "about",
+            "pscore",
             "is_active",
             "is_staff",
         )

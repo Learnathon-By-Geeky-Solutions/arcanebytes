@@ -13,6 +13,8 @@ class User(AbstractUser):
     email = models.EmailField(_("email address"), unique=True)
     img_url = models.URLField()
     about = models.TextField()
+    pscore = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

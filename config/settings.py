@@ -33,6 +33,8 @@ INSTALLED_APPS += []
 # project apps
 INSTALLED_APPS += [
     "apps.accounts",
+    "apps.api",
+    "apps.core",
 ]
 
 MIDDLEWARE = [
