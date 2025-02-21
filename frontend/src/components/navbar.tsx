@@ -57,9 +57,9 @@ const navbar = () => {
             <li>
               <Link
                 className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"
-                href="/"
+                href="/forum"
               >
-                Blogs
+                Forum
               </Link>
             </li>
             <li>
@@ -120,9 +120,9 @@ const navbar = () => {
           <li>
             <Link
               className="delay-150 duration-300 ease-in-out hover:text-[#FF5B36]"
-              href="/"
+              href="/forum"
             >
-              Blogs
+              Forum
             </Link>
           </li>
           <li>
