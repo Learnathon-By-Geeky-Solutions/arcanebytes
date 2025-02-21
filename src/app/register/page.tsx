@@ -11,8 +11,9 @@ const RegisterPage = () => {
   return (
     <div>
       <main className="flex flex-col-reverse md:flex-row justify-around mt-5 md:mt-10">
-        <section className="flex flex-col mt-10 md:mt-0 md:w-2/5 items-center px-5 md:px-10 py-5 border-4 border-[#FF5B36] rounded-lg">
-          <span>
+        <section className="flex flex-col mt-10 md:mt-0 md:w-2/5 items-center bg-gradient-to-br from-[#591404] via-red-900 to-[#FF5B36] transition ease-in-out delay-300 duration-400 hover:bg-gradient-to-tr p-1 rounded-lg">
+        <div className=" flex flex-col items-center h-full w-full rounded-md px-5 md:px-10 py-5 main-theme">
+        <span>
             <h1 className={`${kelly.className} text-4xl`}>
               Sign Up <br />
             </h1>
@@ -41,7 +42,7 @@ const RegisterPage = () => {
                   required
                 />
               </div>
-              <div className="flex gap-3">
+              <div className="flex flex-col md:flex-row md:gap-3">
                 <div className="">
                   <label className="label">
                     <span className="label-text text-xs md:text-sm">Password</span>
@@ -94,6 +95,7 @@ const RegisterPage = () => {
                 </Link>
               </p>
             </form>
+          </div>
           </div>
         </section>
         <section className="flex flex-col">

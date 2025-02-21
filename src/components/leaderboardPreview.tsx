@@ -8,11 +8,11 @@ const kelly = Kelly_Slab({
 
 const leaderboardPreview = () => {
   return (
-    <div className='my-20 flex flex-col items-center'>
-        <h1 className={`${kelly.className} rounded-lg lg:max-w-2xl text-[#202020] text-center accent-theme py-5 px-5 lg:px-20 text-3xl lg:text-5xl`}>
+    <div className='my-10 flex flex-col items-center'>
+        <h1 className={`${kelly.className} rounded-lg md:max-w-2xl text-[#202020] text-center accent-theme py-5 px-5 lg:px-20 text-2xl lg:text-5xl`}>
             LeaderBoard Preview 
         </h1>
-        <section className='flex flex-col items-center my-20'>
+        <section className='flex flex-col items-center my-10 md:my-20'>
             <Image className='mb-10' alt='top-3' src="/Top 3.png" width={500} height={200} />
             <Image src="/Leaderboard.png" alt='leaderboard' width={1000} height={500} />
         </section>

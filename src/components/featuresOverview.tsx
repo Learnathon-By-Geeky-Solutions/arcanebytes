@@ -16,7 +16,7 @@ const featuresOverview = () => {
       <h1 className={`${kelly.className} text-center text-3xl md:text-5xl`}>
         Features Overview
       </h1>
-      <section className="flex flex-wrap justify-center items-center mt-20">
+      <section className="flex flex-wrap justify-center items-center mt-10 md:mt-20">
         <div className="card w-80 ">
           <figure>
             <Image src={Icon} alt="icon" width={100} height={100} />

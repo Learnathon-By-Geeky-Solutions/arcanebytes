@@ -10,7 +10,7 @@ const faq = () => {
       <h1 className={`${kelly.className} text-center text-3xl md:text-5xl`}>
         Frequently Asked Questions (FAQ)
       </h1>
-      <section className="md:max-w-4xl md:mx-auto my-20">
+      <section className="md:max-w-4xl md:mx-auto my-10 ">
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" defaultChecked />
           <div className="collapse-title md:text-xl font-medium">

@@ -3,6 +3,7 @@ import React from "react";
 import { Kelly_Slab } from "next/font/google";
 import { Khand } from "next/font/google";
 import Image from "next/image";
+import Mascot from "../../public/Kaizen-Mascot.png";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ['latin'],
@@ -40,7 +41,7 @@ const hero = () => {
             </div> 
         </h1>
         <div className="flex flex-col gap-5 items-center">
-          <Image src="/mascot.svg" alt="login" width={170} height={100} />
+          <Image src={Mascot} alt="mascot" width={170} height={100} />
           <span className="flex gap-2 md:gap-5 justify-end">
             <Link
               className=" md:px-6 lg:px-6 px-3 py-2 rounded-lg btn-dark ml-5 text-sm"
