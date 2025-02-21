@@ -14,7 +14,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Kaizen Sign-Up',  
-  description: 'Register for the Kaizen app to start your productivity journey',
+  description: 'Register for Kaizen to track habits, join challenges, and unlock achievements in your personal productivity journey',
 };
 const RegisterPage = () => {
   return (
@@ -108,14 +108,14 @@ const RegisterPage = () => {
           </div>
         </section>
         <section className="flex flex-col">
-          <span>
-            <h1 className={`${kelly.className} text-4xl md:text-6xl`}>
+        <section aria-label="Register Header">
+        <h1 className={`${kelly.className} text-4xl md:text-6xl`}>
               Start Your Journey <br />
               <p className="text-3xl md:text-5xl mt-2 md:mt-5">
                 with <span className="text-[#FF5B36]">K</span>aizen
               </p>
             </h1>
-          </span>
+          </section>
           <span className="hidden md:block">
             <Image src={Image3} alt="login" width={460} height={300} />
           </span>
