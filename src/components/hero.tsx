@@ -16,16 +16,16 @@ const hero = () => {
   return (
     <>
       <div className=" flex flex-wrap mt-5 mb-10 justify-around">
-        <section className="mt-10 mb-5">
+        <section className="md:mt-10 mb-5">
           <h1 className={`${kelly.className} mb-5 text-4xl md:text-7xl font-bold`}>
             Trust The Process
           </h1>
-          <p className="mt-10 text-xs md:text-lg md:max-w-lg">
-            “Hold the vision. Drop the excuses. Remember your why. <br />
+          <p className="md:mt-10 text-[10px] md:text-lg md:max-w-lg">
+            “Hold the vision. Drop the excuses. Remember your why.<br />
             Swerve around obstacles. Trust the process. <br />
             Happiness and success will find you.”
           </p>
-          <p className="mt-5 text-xs md:text-base italic">– Karen Salmansohn</p>
+          <p className="mt-2 md:mt-5 text-[10px] md:text-base italic">– Karen Salmansohn</p>
         </section>
         <section>
           <Image src="/image-1.svg" alt="hero" width={300} height={400} />
@@ -33,7 +33,7 @@ const hero = () => {
       </div>
       <div className="flex flex-wrap justify-around accent-theme rounded-lg py-5 px-5 md:px-10">
         <h1
-          className={`${khand.className} text-4xl md:text-5xl leading-normal p-5 text-[#202020]`}
+          className={`${khand.className} text-3xl md:text-5xl leading-normal p-5 text-[#202020]`}
         >
           Achieve your goals with personalized challenges, <div className="md:pt-5"> rewards, and
           progress tracking.
@@ -43,13 +43,13 @@ const hero = () => {
           <Image src="/mascot.svg" alt="login" width={170} height={100} />
           <span className="flex gap-2 md:gap-5 justify-end">
             <Link
-              className=" md:px-6 lg:px-6 px-2 py-2 rounded-lg btn-dark ml-5 text-[#]"
+              className=" md:px-6 lg:px-6 px-3 py-2 rounded-lg btn-dark ml-5 text-sm"
               href="/login"
             >
               Get Started
             </Link>
             <Link
-              className=" btn-outline-dark font-medium md:px-6 lg:px-6 px-2 py-2  rounded-lg"
+              className=" btn-outline-dark md:font-medium md:px-6 lg:px-6 px-3 py-2 text-sm rounded-lg"
               href="/contact"
             >
               Learn More

@@ -10,13 +10,13 @@ const faq = () => {
       <h1 className={`${kelly.className} text-center text-3xl md:text-5xl`}>
         Frequently Asked Questions (FAQ)
       </h1>
-      <section className="md:max-w-4xl mx-auto my-20">
+      <section className="md:max-w-4xl md:mx-auto my-20">
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" defaultChecked />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title md:text-xl font-medium">
             1. What is Kaizen?
           </div>
-          <div className="collapse-content">
+          <div className="m collapse-content">
             <p>
               Kaizen is a gamified productivity application designed to help
               users overcome procrastination, build positive habits, and achieve
@@ -28,7 +28,7 @@ const faq = () => {
         </div>
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title md:text-xl font-medium">
             2. How does Kaizen help with procrastination?
           </div>
           <div className="collapse-content">
@@ -43,7 +43,7 @@ const faq = () => {
         </div>
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title md:text-xl font-medium">
             3. How does the reward system work?
           </div>
           <div className="collapse-content">
@@ -58,7 +58,7 @@ const faq = () => {
         </div>
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title md:text-xl font-medium">
             4. Can I track my progress over time?
           </div>
           <div className="collapse-content">
@@ -71,7 +71,7 @@ const faq = () => {
         </div>
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title md:text-xl font-medium">
             5. Does Kaizen have social or community features?
           </div>
           <div className="collapse-content">
@@ -85,7 +85,7 @@ const faq = () => {
         </div>
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title md:text-xl font-medium">
           6. What makes Kaizen different from other productivity apps?          
           </div>
           <div className="collapse-content">
@@ -96,7 +96,7 @@ const faq = () => {
         </div>
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title md:text-xl font-medium">
           7. How do I get started with Kaizen?
                     </div>
           <div className="collapse-content">
