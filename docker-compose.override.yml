@@ -23,10 +23,10 @@ services:
   web:
     build:
       context: ./frontend
-      dockerfile: docker/Dockerfile
+      dockerfile: docker/Dockerfile.dev
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
     depends_on:
       - api
