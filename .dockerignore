@@ -1,0 +1,16 @@
+node_modules
+
+*.log
+
+.git
+.gitignore
+.DS_Store
+.vscode
+.idea
+
+.env
+.env.local
+.env.development
+.env.production
+
+.venv
