@@ -1,6 +1,7 @@
 node_modules
 
 *.log
+npm-debug.log*
 
 .git
 .gitignore
@@ -16,3 +17,5 @@ node_modules
 .next
 out
 dist
+build
+coverage
