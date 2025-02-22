@@ -23,15 +23,15 @@ services:
   web:
     build:
       context: ./frontend
-      dockerfile: docker/Dockerfile
+      dockerfile: docker/Dockerfile.dev
     volumes:
       - ./frontend:/app
       - /app/node_modules
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
     env_file:
-      - ./frontend/.env
+      - ./frontend/.env.local
     depends_on:
       - api

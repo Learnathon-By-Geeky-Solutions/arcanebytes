@@ -1,6 +1,7 @@
 node_modules
 
 *.log
+npm-debug.log*
 
 .git
 .gitignore
@@ -13,4 +14,8 @@ node_modules
 .env.development
 .env.production
 
-.venv
+.next
+out
+dist
+build
+coverage
