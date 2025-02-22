@@ -14,6 +14,7 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   title: "Kaizen - ArcaneBytes",
   description: "Kaizen by ArcaneBytes",
+   viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
