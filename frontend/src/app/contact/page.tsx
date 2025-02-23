@@ -23,14 +23,14 @@ const ContactPage = () => {
           <span className="hidden md:block">
             <Image src={Image4} alt="login" width={400} height={300} />
           </span>
-          <span>
+          <section aria-label="Contact Header">
             <h1 className={`${kelly.className} text-5xl md:text-7xl`}>
               Let&apos;s Connect<br />
               <p className="text-4xl md:text-5xl mt-5">
                 with <span className="text-[#FF5B36]">K</span>aizen
               </p>
             </h1>
-          </span>
+          </section>
         </section>
         <section className=" md:w-1/2 mt-10 bg-gradient-to-br from-[#591404] via-red-900 to-[#FF5B36] transition ease-in-out delay-300 duration-400 hover:bg-gradient-to-tr p-1 rounded-lg">
           <div className=" flex flex-col items-center h-full w-full rounded-md px-6 md:px-10 py-5 main-theme">
