@@ -15,19 +15,17 @@ export const metadata: Metadata = {
 };
 
 const ForumPage = () => {
-  return (
-    <div>
-      <main>
-        <section aria-label="Forum Header">
-          <h1
-            className={`${kelly.className} text-center py-5 text-5xl md:text-6xl`}
-          >
-            <span className="text-[#FF5B36]"> K</span>aizen Forum
-          </h1>
-        </section>
-      </main>
-    </div>
-  );
+ return (
+   <main>
+     <section aria-label="Forum Header">
+       <h1
+         className={`${kelly.className} text-center py-5 text-5xl md:text-6xl`}
+       >
+         <span className="text-[#FF5B36]">K</span>aizen Forum
+       </h1>
+     </section>
+   </main>
+ );
 };
 
 export default ForumPage;

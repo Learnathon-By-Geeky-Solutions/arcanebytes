@@ -17,9 +17,11 @@ export const metadata: Metadata = {
 const FeaturesPage = () => {
   return (
     <div>
+      <section aria-label="Features Header">
       <h1 className={`${kelly.className} text-center py-5 text-5xl md:text-6xl`}>
         <span className="text-[#FF5B36]"> K</span>aizen Features
       </h1>
+      </section>
       <section className="flex flex-col justify-center items-center">
         <h1
           className={`${kelly.className} text-center px-5 md:px-16 accent-theme rounded-xl py-2 text-3xl`}

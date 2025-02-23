@@ -8,18 +8,23 @@ const kelly = Kelly_Slab({
   fallback: ["system-ui", "arial"],
   preload: true,
 });
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'About Kaizen',
-  description: 'Learn more about the Kaizen app and its mission to help users achieve their goals through continuous improvement',
+  title: "About Kaizen",
+  description:
+    "Learn more about the Kaizen app and its mission to help users achieve their goals through continuous improvement",
 };
 const AboutPage = () => {
   return (
     <div>
-      <h1 className={`${kelly.className} text-center py-5 text-4xl md:text-6xl`}>
-        About <span className="text-[#FF5B36]"> K</span>aizen
-      </h1>
+      <section aria-label="About Header">
+        <h1
+          className={`${kelly.className} text-center py-5 text-4xl md:text-6xl`}
+        >
+          About <span className="text-[#FF5B36]"> K</span>aizen
+        </h1>
+      </section>
       <section className="flex flex-col justify-center items-center">
         <h1
           className={`${kelly.className} text-center px-10 md:px-16 accent-theme rounded-xl py-2 md:mb-5 text-2xl md:text-4xl`}
@@ -43,13 +48,30 @@ const AboutPage = () => {
           step counts toward achieving greatness.
         </article>
         <h3 className="text-center text-2xl font-medium py-5">
-          Developed By - <Link className="accent-font" href={'https://github.com/Learnathon-By-Geeky-Solutions/arcanebytes'} target="_blank">ArcaneBytes</Link>
-
+          Developed By -{" "}
+          <Link
+            className="accent-font"
+            href={
+              "https://github.com/Learnathon-By-Geeky-Solutions/arcanebytes"
+            }
+            target="_blank"
+          >
+            ArcaneBytes
+          </Link>
         </h3>
-        <section className={`${kelly.className} flex flex-col gap-5 text-xl justify-center items-center mb-10`}>
-          <Link href={'https://github.com/twfksh'} target="_blank"> Toufiq Ahmed Shishir</Link>
-          <Link href={'https://github.com/fahimalshihab'} target="_blank">Fahim Al Shihab</Link>
-          <Link href={'https://github.com/TanzilRayhan'} target="_blank">Tanzil Rayhan</Link>
+        <section
+          className={`${kelly.className} flex flex-col gap-5 text-xl justify-center items-center mb-10`}
+        >
+          <Link href={"https://github.com/twfksh"} target="_blank">
+            {" "}
+            Toufiq Ahmed Shishir
+          </Link>
+          <Link href={"https://github.com/fahimalshihab"} target="_blank">
+            Fahim Al Shihab
+          </Link>
+          <Link href={"https://github.com/TanzilRayhan"} target="_blank">
+            Tanzil Rayhan
+          </Link>
         </section>
       </section>
     </div>
