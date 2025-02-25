@@ -70,7 +70,7 @@ const LoginPage = () => {
                   </p>
                 </div>
                 <div className="mt-5 flex justify-center items-center">
-                  <Link href="/"  className="btn-accent text-center font-medium md:w-40 rounded-lg p-3">
+                  <Link href="/"   className="btn-accent text-center font-medium w-40 rounded-lg p-3">
                     Login
                   </Link>
                 </div>
