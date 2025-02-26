@@ -10,7 +10,7 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package*.json .
-RUN npm install && npm run build
+RUN npm ci && npm run build
 COPY . .
 
 EXPOSE 3000
