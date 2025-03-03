@@ -2,7 +2,7 @@
 
 FROM python:3.12.9-alpine as builder
 # create virtual environment
-RUN python -m venv /opt/venv
+RUN python -m venv /opt/venv --system-site-packages
 ENV PATH="/opt/venv/bin:$PATH"
 COPY requirements.txt .
 RUN pip install --upgrade pip
