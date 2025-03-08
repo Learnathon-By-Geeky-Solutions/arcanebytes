@@ -43,7 +43,6 @@ INSTALLED_APPS += [
 # project apps
 INSTALLED_APPS += [
     "apps.accounts",
-    "apps.api",
     "apps.core",
 ]
 
@@ -149,7 +148,7 @@ REST_FRAMEWORK = {
 }
 
 REST_KNOX = {
-    "USER_SERIALIZER": "apps.accounts.serializers.UserSerializer",
+    "USER_SERIALIZER": "apps.accounts.api.v1.serializers.UserSerializer",
     "TOKEN_TTL": timedelta(hours=48),
 }
 
