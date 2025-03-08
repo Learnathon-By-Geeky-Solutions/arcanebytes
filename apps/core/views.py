@@ -1,3 +1,1 @@
-from django.shortcuts import render
-
-_ = render  # to avoid linter check
+from django.shortcuts import render  # noqa: F401

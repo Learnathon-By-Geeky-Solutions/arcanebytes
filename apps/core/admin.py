@@ -1,3 +1,1 @@
-from django.contrib import admin
-
-_ = admin  # to avoid linter check
+from django.contrib import admin  # noqa: F401

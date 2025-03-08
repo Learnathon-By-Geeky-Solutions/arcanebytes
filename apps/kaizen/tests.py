@@ -1,3 +1,1 @@
-from django.test import TestCase
-
-_ = TestCase  # to avoid linter check
+from django.test import TestCase  # noqa: F401
