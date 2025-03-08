@@ -1,7 +1,8 @@
 import os
 from datetime import timedelta
-from dotenv import load_dotenv
 from pathlib import Path
+
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -35,14 +36,13 @@ INSTALLED_APPS = [
 # 3rd-party apps
 INSTALLED_APPS += [
     "rest_framework",
-    "rest_framework.authtoken",
+    "knox",
     "corsheaders",
 ]
 
 # project apps
 INSTALLED_APPS += [
     "apps.accounts",
-    "apps.api",
     "apps.core",
 ]
 
@@ -144,17 +144,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "accounts.User"
 
 REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ),
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
-    ],
+    "DEFAULT_AUTHENTICATION_CLASSES": ("knox.auth.TokenAuthentication",),
 }
 
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+REST_KNOX = {
+    "USER_SERIALIZER": "apps.accounts.api.v1.serializers.UserSerializer",
+    "TOKEN_TTL": timedelta(hours=48),
 }
 
 CORS_ALLOW_ALL_ORIGINS = True
