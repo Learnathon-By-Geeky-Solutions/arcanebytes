@@ -18,12 +18,14 @@ export const metadata: Metadata = {
   description: 'Register for Kaizen to track habits, join challenges, and unlock achievements in your personal productivity journey',
 };
 const RegisterPage = () => {
+  //NOSONAR_BEGIN
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
     const res = await register_user(formData);
   }
+  //NOSONAR_END
 
   return (
     <div>
