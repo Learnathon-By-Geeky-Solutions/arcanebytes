@@ -10,8 +10,12 @@ from .managers import CustomUserManager
 
 class User(AbstractBaseUser, PermissionsMixin):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    display_name = models.CharField(_("display name"), max_length=255, null=True, blank=True)
-    username = models.CharField(_("username"), unique=True, null=True, max_length=36)
+    display_name = models.CharField(
+        _("display name"), max_length=255, blank=True, default=""
+    )
+    username = models.CharField(
+        _("username"), unique=True, blank=True, default="", max_length=36
+    )
     email = models.EmailField(_("email address"), unique=True)
     img_url = models.URLField(_("image url"), blank=True)
     about = models.TextField(_("about"), blank=True)

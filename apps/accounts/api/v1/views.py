@@ -8,7 +8,7 @@ from apps.accounts.api.v1.serializers import (
 from rest_framework import generics
 from rest_framework.permissions import AllowAny, IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import serializers, status
 from knox import views as knox_views
 from django.contrib.auth import login
 
@@ -27,7 +27,7 @@ class CreateUserView(generics.CreateAPIView):
     permission_classes = (AllowAny,)
 
 
-class RetriveUserView(generics.RetrieveAPIView):
+class RetrieveUserView(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = (IsAdminUser,)
@@ -45,16 +45,16 @@ class LoginView(knox_views.LoginView):
 
     def post(self, request, format=None):
         serializer = self.serializer_class(data=request.data)
-        if serializer.is_valid(raise_exception=True):
+        try:
+            serializer.is_valid(raise_exception=True)
             user = serializer.validated_data["user"]
             login(request, user)
             response = super().post(request, format=None)
-        else:
+            return Response(response.data, status=status.HTTP_200_OK)
+        except serializers.ValidationError:
             return Response(
                 {
                     "errors": serializer.errors,
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
-
-        return Response(response.data, status=status.HTTP_200_OK)

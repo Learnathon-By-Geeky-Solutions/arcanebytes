@@ -21,10 +21,6 @@ class UserSerializer(serializers.ModelSerializer):
         ]
         extra_kwargs = {"password": {"read_only": True}}
 
-    def create(self, validated_data):
-        user = User.objects.create_user(**validated_data)
-        return user
-
 
 class CreateUserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -46,8 +42,9 @@ class CreateUserSerializer(serializers.ModelSerializer):
         return attrs
 
     def create(self, validated_data):
+        password = validated_data.pop("password")
         user = User.objects.create(**validated_data)
-        user.set_password(validated_data["password"])
+        user.set_password(password)
         user.save()
         return user
 
@@ -69,12 +66,10 @@ class UpdateUserSerializer(serializers.ModelSerializer):
         }
 
     def update(self, instance, validated_data):
-        password = validated_data.pop("password")
+        password = validated_data.pop("password", None)
         if password:
             instance.set_password(password)
-        instance = super().update(instance, validated_data)
-
-        return instance
+        return super().update(instance, validated_data)
 
 
 class LoginSerializer(serializers.Serializer):
