@@ -1,4 +1,4 @@
-from apps.accounts.serializers import (
+from apps.accounts.api.v1.serializers import (
     UserSerializer,
     CreateUserSerializer,
     UpdateUserSerializer,
@@ -12,7 +12,7 @@ from rest_framework import status
 from knox import views as knox_views
 from django.contrib.auth import login
 
-from .models import User
+from apps.accounts.models import User
 
 
 class ListUserView(generics.ListAPIView):
