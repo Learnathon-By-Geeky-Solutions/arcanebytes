@@ -13,7 +13,7 @@ FROM python:3.12.9-alpine
 ENV PYTHONUNBUFFERED=1
 # non-root user
 RUN addgroup -S app && adduser -S app -G app
-WORKDIR /app
+WORKDIR /usr/src/app
 # copy virtual environment
 COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
