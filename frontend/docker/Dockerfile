@@ -1,15 +1,13 @@
 # syntax=docker/dockerfile:experimental
 
-FROM node:hydrogen-alpine3.21
+# FROM gcr.io/distroless/nodejs22-debian12
+FROM node:22-bookworm-slim
 
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
-
-WORKDIR /app
+WORKDIR /urs/src/app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-COPY package*.json .
+COPY package*.json ./
 RUN npm ci && npm run build
 COPY . .
 

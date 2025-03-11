@@ -25,8 +25,7 @@ services:
       context: ./frontend
       dockerfile: docker/Dockerfile.dev
     volumes:
-      - ./frontend:/app
-      - /app/node_modules
+      - /usr/src/app
     ports:
       - "3000:3000"
     environment:
