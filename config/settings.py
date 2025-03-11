@@ -44,6 +44,7 @@ INSTALLED_APPS += [
 INSTALLED_APPS += [
     "apps.accounts",
     "apps.core",
+    # "apps.kaizen",
 ]
 
 MIDDLEWARE = [
