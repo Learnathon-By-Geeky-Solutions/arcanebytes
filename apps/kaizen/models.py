@@ -54,5 +54,4 @@ class Reflection(BaseModel):
 
     def __str__(self):
         return self.title
-=======
-from django.db import models  # noqa: F401
+
