@@ -1,19 +1,15 @@
-# syntax=docker/dockerfile:experimental
-
-# FROM gcr.io/distroless/nodejs22-debian12
 FROM node:22-bookworm-slim
 
-WORKDIR /urs/src/app
+WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package*.json ./
-RUN npm ci && npm run build
+RUN npm ci
+
 COPY . .
+COPY next.config.ts ./next.config.ts
 
 EXPOSE 3000
 
-HEALTHCHECK --interval=30s --timeout=3s \
-    CMD wget -qO- http://localhost:3000/ || exit 1
-
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]
