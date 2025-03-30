@@ -1,9 +1,10 @@
-import os
-from datetime import timedelta
+from os import getenv
 from dotenv import load_dotenv
+from datetime import timedelta
 from pathlib import Path
 
-load_dotenv()
+
+load_dotenv()  # Load environment variables from .env file
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,11 +13,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", None)
+SECRET_KEY = getenv(
+    "DJANGO_SECRET_KEY", "insecure_secret_key"
+)  # insecure_secret_key is a fallback value
 if SECRET_KEY is None:
     raise ValueError("DJANGO_SECRET_KEY environment variable is not set")
 
-DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() == "true"
+DEBUG = getenv("DJANGO_DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = ["*"]
 
@@ -35,15 +38,15 @@ INSTALLED_APPS = [
 # 3rd-party apps
 INSTALLED_APPS += [
     "rest_framework",
-    "rest_framework.authtoken",
+    "knox",
     "corsheaders",
 ]
 
 # project apps
 INSTALLED_APPS += [
     "apps.accounts",
-    "apps.api",
     "apps.core",
+    "apps.kaizen",
 ]
 
 MIDDLEWARE = [
@@ -91,11 +94,11 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.environ.get("POSTGRES_DB"),
-        "USER": os.environ.get("POSTGRES_USER"),
-        "PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
-        "HOST": os.environ.get("POSTGRES_HOST", "db"),
-        "PORT": os.environ.get("POSTGRES_PORT", 5432),
+        "NAME": getenv("POSTGRES_DB"),
+        "USER": getenv("POSTGRES_USER"),
+        "PASSWORD": getenv("POSTGRES_PASSWORD"),
+        "HOST": getenv("POSTGRES_HOST", "db"),
+        "PORT": getenv("POSTGRES_PORT", 5432),
     }
 }
 
@@ -144,17 +147,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "accounts.User"
 
 REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ),
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
-    ],
+    "DEFAULT_AUTHENTICATION_CLASSES": ("knox.auth.TokenAuthentication",),
 }
 
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+REST_KNOX = {
+    "USER_SERIALIZER": "apps.accounts.api.v1.serializers.UserSerializer",
+    "TOKEN_TTL": timedelta(hours=48),
 }
 
 CORS_ALLOW_ALL_ORIGINS = True

@@ -1,21 +1,15 @@
-# syntax=docker/dockerfile:experimental
-
-FROM node:hydrogen-alpine3.21
-
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
+FROM node:22-bookworm-slim
 
 WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-COPY package*.json .
-RUN npm install && npm run build
+COPY package*.json ./
+RUN npm ci
+
 COPY . .
+COPY next.config.ts ./next.config.ts
 
 EXPOSE 3000
 
-HEALTHCHECK --interval=30s --timeout=3s \
-    CMD wget -qO- http://localhost:3000/ || exit 1
-
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]

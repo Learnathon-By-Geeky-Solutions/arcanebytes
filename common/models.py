@@ -18,8 +18,12 @@ class BaseModel(models.Model):
     Tracks instance creations, updates, and (soft) deletions.
     """
 
-    uuid = models.UUIDField(
-        verbose_name=_("UUID"), unique=True, default=uuid.uuid4, editable=False
+    id = models.UUIDField(
+        verbose_name=_("UUID"),
+        primary_key=True,
+        unique=True,
+        default=uuid.uuid4,
+        editable=False,
     )
 
     created_by = models.ForeignKey(
