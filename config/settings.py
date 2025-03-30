@@ -13,7 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-SECRET_KEY = getenv("DJANGO_SECRET_KEY", None)
+SECRET_KEY = getenv(
+    "DJANGO_SECRET_KEY", "insecure_secret_key"
+)  # insecure_secret_key is a fallback value
 if SECRET_KEY is None:
     raise ValueError("DJANGO_SECRET_KEY environment variable is not set")
 
@@ -44,7 +46,7 @@ INSTALLED_APPS += [
 INSTALLED_APPS += [
     "apps.accounts",
     "apps.core",
-    # "apps.kaizen",
+    "apps.kaizen",
 ]
 
 MIDDLEWARE = [
