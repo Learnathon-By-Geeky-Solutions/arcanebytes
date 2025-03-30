@@ -1,21 +1,17 @@
-import uuid
 from django.db import models
-from apps.accounts.models import User
 from common.models import BaseModel
 
 
 # Task model
 class Task(BaseModel):
     title = models.CharField(max_length=255)
-    description = models.TextField(blank=True, null=True)
-    priority = models.IntegerField()
+    details = models.TextField(blank=True, default="", null=True)
     due_date = models.DateTimeField(blank=True, null=True)
     completed = models.BooleanField(default=False)
     completed_time = models.DateTimeField(blank=True, null=True)
     is_all_day = models.BooleanField(default=False)
     reminders = models.JSONField(blank=True, null=True)
     repeat_flag = models.CharField(max_length=50, blank=True, null=True)
-    time_zone = models.CharField(max_length=50, blank=True, null=True)
     is_highlight = models.BooleanField(default=False)
 
     def __str__(self):
@@ -28,10 +24,6 @@ class SubTask(BaseModel):
     title = models.CharField(max_length=255)
     completed = models.BooleanField(default=False)
     completed_time = models.DateTimeField(blank=True, null=True)
-    is_all_day = models.BooleanField(default=False)
-    start_date = models.DateTimeField()
-    time_zone = models.CharField(max_length=50, blank=True, null=True)
-    sort_order = models.IntegerField()
 
     def __str__(self):
         return self.title
@@ -39,19 +31,28 @@ class SubTask(BaseModel):
 
 # Reflection model
 class Reflection(BaseModel):
-    RATING_CHOICES = [
-        (1, "Very Bad"),
-        (2, "Bad"),
+    MOOD_CHOICES = [
+        (1, "Very Sad"),
+        (2, "Sad"),
         (3, "Neutral"),
-        (4, "Good"),
-        (5, "Very Good"),
+        (4, "Happy"),
+        (5, "Very Happy"),
     ]
 
-    date = models.DateField()
+    PRODUCTIVITY_CHOICES = [
+        (1, "Very Unproductive"),
+        (2, "Unproductive"),
+        (3, "Neutral"),
+        (4, "Productive"),
+        (5, "Very Productive"),
+    ]
+
     title = models.CharField(max_length=255)
-    reflection = models.TextField()
-    rating = models.IntegerField(choices=RATING_CHOICES)
+    notes = models.TextField(blank=True, default="", null=True)
+    mood = models.IntegerField(choices=MOOD_CHOICES, default=None)
+    productivity_rating = models.IntegerField(
+        choices=PRODUCTIVITY_CHOICES, default=None
+    )
 
     def __str__(self):
         return self.title
-

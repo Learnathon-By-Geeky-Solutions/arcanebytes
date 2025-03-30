@@ -2,25 +2,31 @@ services:
   db:
     image: postgres:17.3-alpine
     volumes:
-      - .:/data/db:/var/lib/postgresql/data
+      - ./data:/db/var/lib/postgresql/data
+    env_file:
+      - ./.env
     environment:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
   api:
+    restart: always
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/app
+      - ./:/app
     ports:
       - "8000:8000"
     environment:
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DJANGO_DEBUG=${DJANGO_DEBUG}
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     depends_on:
       - db
   web:
+    restart: always
     build:
       context: ./frontend
       dockerfile: docker/Dockerfile
@@ -30,7 +36,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
     env_file:
       - ./frontend/.env
     depends_on:

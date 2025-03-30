@@ -9,5 +9,5 @@ router.register(r"subtasks", SubTaskViewSet)
 router.register(r"reflections", ReflectionViewSet)
 
 urlpatterns = [
-    path("", include(router.urls)),  # This will expose API endpoints
+    path("v1/", include(router.urls)),  # This will expose API endpoints
 ]
