@@ -5,7 +5,7 @@ from common.models import BaseModel
 # Task model
 class Task(BaseModel):
     title = models.CharField(max_length=255)
-    details = models.TextField(blank=True, null=True)
+    details = models.TextField(blank=True, default="", null=True)
     due_date = models.DateTimeField(blank=True, null=True)
     completed = models.BooleanField(default=False)
     completed_time = models.DateTimeField(blank=True, null=True)
@@ -47,11 +47,12 @@ class Reflection(BaseModel):
         (5, "Very Productive"),
     ]
 
-    date = models.DateField()
     title = models.CharField(max_length=255)
-    notes = models.TextField()
-    mood = models.IntegerField(choices=MOOD_CHOICES)
-    productivity = models.IntegerField(choices=PRODUCTIVITY_CHOICES)
+    notes = models.TextField(blank=True, default="", null=True)
+    mood = models.IntegerField(choices=MOOD_CHOICES, default=None)
+    productivity_rating = models.IntegerField(
+        choices=PRODUCTIVITY_CHOICES, default=None
+    )
 
     def __str__(self):
         return self.title
