@@ -9,8 +9,11 @@ import Icon3 from "../../public/Icon (3).png";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ['latin'],
+  display: 'swap',
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
-const featuresOverview = () => {
+const FeaturesOverview = () => {
   return (
     <div className="my-20 ">
       <h1 className={`${kelly.className} text-center text-3xl md:text-5xl`}>
@@ -58,4 +61,4 @@ const featuresOverview = () => {
   );
 };
 
-export default featuresOverview;
+export default FeaturesOverview;

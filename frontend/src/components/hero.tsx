@@ -6,18 +6,24 @@ import Image from "next/image";
 import Mascot from "../../public/Kaizen-Mascot.png";
 const kelly = Kelly_Slab({
   weight: ["400"],
-  subsets: ['latin'],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
 const khand = Khand({
   weight: ["700"],
   subsets: ['latin'],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
 
 const hero = () => {
   return (
     <>
       <div className=" flex flex-wrap mt-5 mb-10 justify-around">
-        <section className="md:mt-10 mb-5">
+        <section aria-label="Home Page Header" className="md:mt-10 mb-5">
           <h1 className={`${kelly.className} mb-5 text-4xl md:text-7xl font-bold`}>
             Trust The Process
           </h1>

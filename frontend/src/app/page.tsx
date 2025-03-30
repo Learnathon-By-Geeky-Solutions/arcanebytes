@@ -7,8 +7,8 @@ import Footer from '../components/footer'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kaizen Home',
-  description: 'Welcome to the Kaizen app, the productivity app that helps you improve your habits and achieve your goals',
+  title: 'Kaizen',
+  description: 'Welcome to Kaizen, the productivity app that helps you improve your habits and achieve your goals',
 };
 const page = () => {
   return (

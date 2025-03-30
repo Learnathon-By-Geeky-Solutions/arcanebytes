@@ -3,6 +3,9 @@ import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ["latin"],
+  display: 'swap',
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
 const faq = () => {
   return (

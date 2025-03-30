@@ -1,23 +1,43 @@
-import React from 'react'
+import React from "react";
 import { Kelly_Slab } from "next/font/google";
-import Image from 'next/image';
+import Image from "next/image";
 const kelly = Kelly_Slab({
-    weight: ["400"],
-    subsets: ['latin'],
-  });
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
+});
 
-const leaderboardPreview = () => {
+const LeaderboardPreview = () => {
   return (
-    <div className='my-10 flex flex-col items-center'>
-        <h1 className={`${kelly.className} rounded-lg md:max-w-2xl text-[#202020] text-center accent-theme py-5 px-5 lg:px-20 text-2xl lg:text-5xl`}>
-            LeaderBoard Preview 
-        </h1>
-        <section className='flex flex-col items-center my-10 md:my-20'>
-            <Image className='mb-10' alt='top-3' src="/Top 3.png" width={500} height={200} />
-            <Image src="/Leaderboard.png" alt='leaderboard' width={1000} height={500} />
-        </section>
+    <div className="my-10 flex flex-col items-center">
+      <h1
+        className={`${kelly.className} rounded-lg md:max-w-2xl text-[#202020] text-center accent-theme py-5 px-5 lg:px-20 text-2xl lg:text-5xl`}
+      >
+        LeaderBoard Preview
+      </h1>
+      <section className="flex flex-col items-center my-10 md:my-20">
+        <Image
+          className="mb-10"
+          alt="top-3"
+          src="/Top 3.png"
+          width={500}
+          height={200}
+          loading="lazy"
+          priority={false}
+        />
+        <Image
+          src="/Leaderboard.png"
+          alt="leaderboard"
+          width={1000}
+          height={500}
+          loading="lazy"
+          priority={false}
+        />
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default leaderboardPreview
+export default LeaderboardPreview;

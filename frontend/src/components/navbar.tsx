@@ -4,11 +4,14 @@ import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ["latin"],
+  display: 'swap',
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
 const navbar = () => {
   return (
     <div className="navbar">
-      <div className="navbar-start ml-[-24px]">
+      <div className="navbar-start ml-[-24px] md:ml-0">
         <div className="dropdown ">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -135,7 +138,7 @@ const navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end ml-24">
+      <div className="navbar-end ml-24 md:ml-0">
         <Link
           className="text-sm px-2 lg:px-10 py-2 rounded-full btn-outline-light"
           href="/login"

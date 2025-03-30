@@ -1,11 +1,15 @@
 import Image from "next/image";
 import React from "react";
+import Testimonial from "../../public/Testimonial.png";
+import Link from "next/link";
 import { Kelly_Slab } from "next/font/google";
 const kelly = Kelly_Slab({
   weight: ["400"],
   subsets: ["latin"],
-});import Testimonial from "../../public/Testimonial.png";
-import Link from "next/link";
+  display: 'swap',
+  fallback: ["system-ui", "arial"],
+  preload: true,
+});
 const footer = () => {
   return (
     <div>
